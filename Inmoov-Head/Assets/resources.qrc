@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="Labels">
+    <file>Icon.ico</file>
+    <file>green.png</file>
+    <file>logo.png</file>
+    <file>red.png</file>
+  </qresource>
+  <qresource prefix="Icons">
+    <file>female.png</file>
+    <file>male.png</file>
+    <file>add.png</file>
+    <file>remove.png</file>
+    <file>down_arrow.png</file>
+    <file>up_arrow.png</file>
+    <file>camera_off.png</file>
+    <file>camera_on.png</file>
+    <file>checked.png</file>
+    <file>checked_hover.png</file>
+    <file>hover.png</file>
+    <file>mirror.png</file>
+    <file>rotate_left.png</file>
+    <file>rotate_right.png</file>
+    <file>unchecked.png</file>
+  </qresource>
+</RCC>

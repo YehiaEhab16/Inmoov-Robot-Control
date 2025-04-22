@@ -1,7 +1,6 @@
 <RCC>
   <qresource prefix="Labels">
     <file>green.png</file>
-    <file>logo.png</file>
     <file>red.png</file>
   </qresource>
   <qresource prefix="Icons">

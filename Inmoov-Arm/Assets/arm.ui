@@ -304,25 +304,6 @@ QPushButton:pressed {
        </widget>
       </item>
       <item alignment="Qt::AlignmentFlag::AlignHCenter">
-       <widget class="QLabel" name="logoLabel">
-        <property name="maximumSize">
-         <size>
-          <width>145</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="resources.qrc">:/Labels/logo.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item alignment="Qt::AlignmentFlag::AlignHCenter">
        <widget class="QRadioButton" name="automaticRadio">
         <property name="font">
          <font>

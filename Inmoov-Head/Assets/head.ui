@@ -336,25 +336,6 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="logoLabel">
-        <property name="maximumSize">
-         <size>
-          <width>150</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="resources.qrc">:/Labels/logo.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QRadioButton" name="automaticRadio">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1539,8 +1520,7 @@ QPushButton:pressed {
                <number>2000</number>
               </property>
               <property name="styleSheet">
-               <string notr="true">
-</string>
+               <string notr="true"/>
               </property>
               <property name="alignment">
                <set>Qt::AlignmentFlag::AlignCenter</set>

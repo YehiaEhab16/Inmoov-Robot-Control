@@ -5,7 +5,8 @@
 ####################### Date : 03/12/2024                          #######################
 ##########################################################################################
 
-from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QLineEdit, QPushButton, QRadioButton, QSizePolicy, QVBoxLayout
+
+from PySide6.QtWidgets import QFrame, QHBoxLayout, QLabel, QLineEdit, QPushButton, QRadioButton, QSizePolicy, QTextEdit, QVBoxLayout, QSpinBox, QCheckBox
 from PySide6.QtCore import QCoreApplication, QMetaObject, QSize, Qt
 from PySide6.QtGui import QFont, QIcon, QPixmap
 import resources
@@ -218,14 +219,6 @@ class InmoovUI(object):
         self.manualRadio.setChecked(True)
 
         self.horizontalLayout_3.addWidget(self.manualRadio, 0, Qt.AlignmentFlag.AlignHCenter)
-
-        self.logoLabel = QLabel(self.topFrame)
-        self.logoLabel.setObjectName(u"logoLabel")
-        self.logoLabel.setMaximumSize(QSize(145, 30))
-        self.logoLabel.setPixmap(QPixmap(u":/Labels/logo.png"))
-        self.logoLabel.setScaledContents(True)
-
-        self.horizontalLayout_3.addWidget(self.logoLabel, 0, Qt.AlignmentFlag.AlignHCenter)
 
         self.automaticRadio = QRadioButton(self.topFrame)
         self.automaticRadio.setObjectName(u"automaticRadio")
@@ -593,7 +586,6 @@ class InmoovUI(object):
         self.mirrorButton.setText("")
         self.rotateRightButton.setText("")
         self.manualRadio.setText(QCoreApplication.translate("Inmoov", u"Manual Mode", None))
-        self.logoLabel.setText("")
         self.automaticRadio.setText(QCoreApplication.translate("Inmoov", u"Automatic Mode", None))
         self.toggleCameraButton.setText("")
         self.cameraLabel.setText(QCoreApplication.translate("Inmoov", u"Cam 1\n"

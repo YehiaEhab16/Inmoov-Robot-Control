@@ -55,9 +55,9 @@ class InmoovUI(object):
 "\n"
 "QAbstractSpinBox::down-button {\n"
 "  subcontrol-origin: padding;\n"
-"  subcontr"
-                        "ol-position: bottom right;\n"
-"  width: 15px;\n"
+"  subcontrol-position: bottom right;\n"
+""
+                        "  width: 15px;\n"
 "  height: 15px;\n"
 "  border-left-width: 1px;\n"
 "  border-left-color: rgb(150, 150, 150);\n"
@@ -102,8 +102,8 @@ class InmoovUI(object):
 "}\n"
 "\n"
 "QLineEdit:hover {\n"
-"	b"
-                        "ackground-color: rgba(80, 80, 80, 150);\n"
+"	background-color: rgba(80, 80, 8"
+                        "0, 150);\n"
 "    border: 2px solid rgba(255, 255, 255, 150);\n"
 "}\n"
 "\n"
@@ -150,9 +150,9 @@ class InmoovUI(object):
 "    image: url(:/Icons/checked.png);\n"
 "}\n"
 "\n"
-"QRadioButton::indicator:checked:hove"
-                        "r {\n"
-"    image: url(:/Icons/checked_hover.png);\n"
+"QRadioButton::indicator:checked:hover {\n"
+"    image: url(:/Icons/"
+                        "checked_hover.png);\n"
 "}\n"
 "\n"
 "QMessageBox {\n"
@@ -195,10 +195,10 @@ class InmoovUI(object):
 "    background-color: transparent;\n"
 "}\n"
 "\n"
-"QScrollBar:ver"
-                        "tical\n"
+"QScrollBar:vertical\n"
 "{\n"
-"    background-color:rgb(30, 30, 30);\n"
+"    background-"
+                        "color:rgb(30, 30, 30);\n"
 "    width: 14px;\n"
 "    margin: 15px 0 15px 0;\n"
 "    border: none;\n"
@@ -242,8 +242,8 @@ class InmoovUI(object):
 "    subcontrol-origin: margin;\n"
 "}\n"
 "\n"
-"QScrollBar::sub-line:vertical:h"
-                        "over,QScrollBar::sub-line:vertical:on\n"
+"QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:verti"
+                        "cal:on\n"
 "{\n"
 "\n"
 "    border-image: url(:/Icons/up_arrow.png);\n"
@@ -299,14 +299,6 @@ class InmoovUI(object):
         self.manualRadio.setChecked(True)
 
         self.horizontalLayout.addWidget(self.manualRadio)
-
-        self.logoLabel = QLabel(self.topFrame)
-        self.logoLabel.setObjectName(u"logoLabel")
-        self.logoLabel.setMaximumSize(QSize(150, 30))
-        self.logoLabel.setPixmap(QPixmap(u":/Labels/logo.png"))
-        self.logoLabel.setScaledContents(True)
-
-        self.horizontalLayout.addWidget(self.logoLabel)
 
         self.automaticRadio = QRadioButton(self.topFrame)
         self.automaticRadio.setObjectName(u"automaticRadio")
@@ -1030,7 +1022,6 @@ class InmoovUI(object):
     def retranslateUi(self, Inmoov):
         Inmoov.setWindowTitle(QCoreApplication.translate("Inmoov", u"Inmoov Humanoid", None))
         self.manualRadio.setText(QCoreApplication.translate("Inmoov", u"Manual Mode", None))
-        self.logoLabel.setText("")
         self.automaticRadio.setText(QCoreApplication.translate("Inmoov", u"Automatic Mode", None))
         self.firstRotateLeftButton.setText("")
         self.firstMirrorButton.setText("")
